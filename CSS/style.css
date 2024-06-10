@@ -6,40 +6,46 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: #210009;
+    --secondary: #00ffae;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
-body{
+body {
     max-width: 100vw;
     overflow-x: hidden;
 }
 
 /* this is your container */
-.full-section-dimensions{
+.full-section-dimensions {
     min-height: 90vh;
     max-height: auto;
     width: 100vw;
-    background-color: #123456;
+    background-color: var(--secondary);
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0;
 }
-.half-section-dimensions{
+
+.half-section-dimensions {
     min-height: 50vh;
     max-height: auto;
-    background-color: #4de364;
+    background-color: var(--secondary);
 }
 
-img{
+img {
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
 }
 
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -49,19 +55,46 @@ h2{
     }
 }
 
-.landing{
+/* .landing{
     background-image: url(https://ismaaeel-a.github.io/allimages/Images/pikachu_artwork.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   /*  border-bottom: 3px solid rgb(255, 255, 255); */
+     border-bottom: 3px solid rgb(255, 255, 255); 
     width: 100vw;
-}
+} */
 
-
-footer{
+footer {
     border-top: 3px solid black;
-    background-color: rgb(66, 10, 66);
+    background-color: var(--primary);
     text-align: center;
     padding-top: 1rem;
     color: silver;
+}
+
+.accordion-item {
+    background-color: var(--secondary);
+}
+
+form {
+    background-color: var(--primary);
+}
+
+.contact_info {
+    width: 18rem;
+    border-radius: 20px;
+}
+
+/* #carouselExampleSlidesOnly {
+    width: 30rem;
+    height: 12rem;
+    background-color: bisque;
+    
+} */
+
+.carousel-inner{
+    width: 50vw;    
+    & img{
+        width: 50vw;
+        height: 50vh;
+    }
 }
